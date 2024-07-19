@@ -21,14 +21,7 @@ const services = [
   },
   {
     num: "03",
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus! Dignissimos odit assumenda nam saepe iusto, error a alias illum!",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "Web Development",
+    title: "UI & UX Design",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus! Dignissimos odit assumenda nam saepe iusto, error a alias illum!",
     href: "",
