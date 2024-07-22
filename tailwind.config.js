@@ -26,10 +26,10 @@ module.exports = {
 
     extend: {
       colors: {
-        primary: "#1c1c22",
+        primary: "#27272a",
         accent: {
-          DEFAULT: "#00ff99",
-          hover: "#00e187",
+          DEFAULT: "#f43f5e",
+          hover: "#e11d48",
         },
       },
       keyframes: {
@@ -48,5 +48,19 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-outline": {
+          textShadow:
+            "2px 2px 0 var(--tw-shadow-color), -2px -2px 0 var(--tw-shadow-color), 2px -2px 0 var(--tw-shadow-color), -2px 2px 0 var(--tw-shadow-color)",
+        },
+        ".text-outline-hover": {
+          textShadow:
+            "2px 2px 0 var(--tw-shadow-color-hover), -2px -2px 0 var(--tw-shadow-color-hover), 2px -2px 0 var(--tw-shadow-color-hover), -2px 2px 0 var(--tw-shadow-color-hover)",
+        },
+      });
+    },
+  ],
 };
