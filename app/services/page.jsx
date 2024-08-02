@@ -1,7 +1,6 @@
 "use client";
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
-import { Description } from "@radix-ui/react-dialog";
 import { easeIn, motion } from "framer-motion";
 
 const services = [
@@ -9,21 +8,28 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus! Dignissimos odit assumenda nam saepe iusto, error a alias illum!",
+      "Building responsive, user-friendly, and dynamic websites using the latest technologies like MERN stack and Next.js.",
     href: "",
   },
   {
     num: "02",
-    title: "SEO",
+    title: "Software Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus! Dignissimos odit assumenda nam saepe iusto, error a alias illum!",
+      "Developing robust and scalable web software tailored to your business needs, leveraging modern frameworks and tools.",
     href: "",
   },
   {
     num: "03",
+    title: "SEO",
+    description:
+      "Optimizing your website to rank higher on search engines, driving organic traffic and improving your online visibility.",
+    href: "",
+  },
+  {
+    num: "04",
     title: "UI & UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, natus! Dignissimos odit assumenda nam saepe iusto, error a alias illum!",
+      "Designing intuitive and engaging user interfaces with a focus on enhancing user experience and satisfaction.",
     href: "",
   },
 ];
@@ -47,7 +53,7 @@ const Services = () => {
                 className="flex-1 flex flex-col justify-center gap-6 group"
               >
                 <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                  <div className="text-4xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500 hover:scale-150">
                     {service.num}
                   </div>
                   <Link

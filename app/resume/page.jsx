@@ -46,7 +46,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam iusto facilis, excepturi veniam voluptates placeat, dolore harum quibusdam iure dicta voluptatum aut. Placeat ullam praesentium, fuga consectetur ipsam eaque.",
+    "I have pursued comprehensive education and training in full-stack web development, focusing on the MERN stack and practical applications.",
   items: [
     {
       institution: "Deerwalk Training Center",
@@ -71,7 +71,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam iusto facilis, excepturi veniam voluptates placeat, dolore harum quibusdam iure dicta voluptatum aut. Placeat ullam praesentium, fuga consectetur ipsam eaque.",
+    "I have diverse experience in full-stack development, SEO, digital marketing, with a proven track record of delivering high-quality software solutions.",
   items: [
     {
       company: "BK Agro",
@@ -104,7 +104,7 @@ const experience = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, laborum! Dolore fuga quasi facere dolor explicabo soluta, fugiat sit laboriosam, id quia pariatur voluptates? Veritatis modi quae ex officia corruption.",
+    "I possess a broad range of technical skills in web development and database management, enabling me to deliver comprehensive and effective solutions.",
   skillList: [
     {
       icon: <FaHtml5 />,

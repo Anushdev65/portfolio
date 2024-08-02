@@ -22,10 +22,14 @@ const Home = () => {
             </p>
             <div>
               <div className="flex flex-col xl:flex-row items-center gap-8">
-                <Button variant="outline" size="lg" className>
+                <a
+                  href="/AnushCv.pdf"
+                  download
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 text-lg font-medium border border-transparent rounded-md shadow-sm text-primary bg-accent"
+                >
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />
-                </Button>
+                </a>
                 <div className="mb-8 xl:mb-0">
                   <Social
                     containerStyles="flex gap-6"
