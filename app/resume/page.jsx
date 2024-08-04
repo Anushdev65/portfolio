@@ -1,7 +1,9 @@
 "use client";
 
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { SiTypescript } from "react-icons/si";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -107,16 +109,24 @@ const skills = {
     "I possess a broad range of technical skills in web development and database management, enabling me to deliver comprehensive and effective solutions.",
   skillList: [
     {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <FaJs />,
+      name: "JavaScript",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "TypeScript",
+    },
+    {
       icon: <FaHtml5 />,
-      name: "html 5",
+      name: "Html 5",
     },
     {
       icon: <FaCss3 />,
       name: "Css 3",
-    },
-    {
-      icon: <FaJs />,
-      name: "javaScript",
     },
     {
       icon: <FaReact />,
