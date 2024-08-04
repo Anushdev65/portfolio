@@ -51,16 +51,16 @@ const education = {
     "I have pursued comprehensive education and training in full-stack web development, focusing on the MERN stack and practical applications.",
   items: [
     {
+      institution: " University of the People, Pasadena, CA",
+      degree: "Associate Bachelors Degree",
+      duration: "On-going",
+    },
+    {
       institution: "Deerwalk Training Center",
       degree: "Diploma in MERN stack",
       duration: "2023",
     },
 
-    {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web development Bootcamp",
-      duration: "2022",
-    },
     {
       institution: "Online Course Platform",
       degree: "Full Stack Web development Bootcamp",
