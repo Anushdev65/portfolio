@@ -12,6 +12,18 @@ import {
   SiGraphql,
 } from "react-icons/si";
 
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@radix-ui/react-tooltip";
+
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from "framer-motion";
+
 const about = {
   title: "About me",
   description:
@@ -76,8 +88,8 @@ const experience = {
     "I have diverse experience in full-stack development, SEO, digital marketing, with a proven track record of delivering high-quality software solutions.",
   items: [
     {
-      company: "BK Agro",
-      position: "Full-stack freelancer",
+      company: "Online",
+      position: "Freelance Developer",
       duration: "present",
     },
     {
@@ -162,18 +174,6 @@ const skills = {
     },
   ],
 };
-
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@radix-ui/react-tooltip";
-
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { motion } from "framer-motion";
 
 const Resume = () => {
   return (
