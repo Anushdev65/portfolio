@@ -25,7 +25,15 @@ const projects = [
     title: "Symbiote ERP",
     description:
       "Led backend delivery for a multi-module ERP and business-operations platform. I translated business requirements into backend architecture, PostgreSQL schemas, Prisma models, and REST API workflows spanning organizations, branches, departments, attendance, tasks and subtasks, recurring work, notifications, inventory, stock adjustments, and supplier mappings. I also supported QA, cloud deployment environments, documentation, defect resolution, and production-style troubleshooting.",
-    stack: ["NestJS", "TypeScript", "PostgreSQL", "Prisma", "Docker", "AWS"],
+    stack: [
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Redis",
+      "Docker",
+      "AWS",
+    ],
     images: Array.from(
       { length: 14 },
       (_, index) => `/assets/work/symbiote${index + 1}.png`,
