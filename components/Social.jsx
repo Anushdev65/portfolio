@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const socials = [
   { icon: <FaGithub />, path: "https://github.com/Anushdev65" },
@@ -8,8 +8,6 @@ const socials = [
     icon: <FaLinkedinIn />,
     path: "https://www.linkedin.com/in/anush-malhotra-58b997286/",
   },
-  { icon: <FaYoutube />, path: "" },
-  { icon: <FaTwitter />, path: "" },
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
@@ -23,6 +21,7 @@ const Social = ({ containerStyles, iconStyles }) => {
               className={iconStyles}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={index === 0 ? "GitHub profile" : "LinkedIn profile"}
             >
               {item.icon}
             </a>

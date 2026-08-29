@@ -3,20 +3,22 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    num: 1,
-    text: "Year of experience",
+    num: 3,
+    suffix: "+",
+    text: "Years in software development",
+  },
+  {
+    num: 4,
+    suffix: "+",
+    text: "Business systems delivered",
   },
   {
     num: 5,
-    text: "Projects completed",
+    text: "Professional development roles",
   },
   {
-    num: 8,
-    text: "Technologies learned",
-  },
-  {
-    num: 150,
-    text: "Code commits",
+    num: 3,
+    text: "Cloud platforms and environments",
   },
 ];
 
@@ -33,6 +35,7 @@ const Stats = () => {
               >
                 <CountUp
                   end={item.num}
+                  suffix={item.suffix || ""}
                   duration={5}
                   delay={2}
                   className="text-4xl xl:text-6xl font-extrabold"

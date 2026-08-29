@@ -1,15 +1,12 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
+import { FaJs, FaReact, FaNodeJs, FaPython, FaDocker, FaAws } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { SiTypescript } from "react-icons/si";
+import { SiTypescript, SiNestjs, SiPrisma } from "react-icons/si";
 import {
-  SiTailwindcss,
   SiNextdotjs,
   SiMongodb,
   SiMysql,
-  SiGraphql,
 } from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -27,7 +24,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "I am a hardworking, highly proficient programming enthusiast with a building passion for web-app/software development. Fundamental knowledge of the core tech stack, MERN, and readily embracing cutting-edge technology, as a full-stack enthusiast, I am always looking forward to growing and am eager to hone my skills ",
+    "Backend-focused system developer with professional software experience since 2023 across ERP platforms, business workflows, REST APIs, databases, and cloud delivery. I enjoy turning operational requirements into robust, maintainable software.",
   info: [
     {
       fieldName: "Name",
@@ -39,19 +36,19 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "1+ year",
+      fieldValue: "Since 2023",
     },
     {
       fieldName: "Email",
       fieldValue: "anush.malhotra4@gmail.com",
     },
     {
-      fieldName: "Freelance",
-      fieldValue: "Available",
+      fieldName: "Location",
+      fieldValue: "Trollhättan, Sweden",
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, Nepali, Hindi",
+      fieldValue: "English, Nepali, Hindi, Swedish (A1)",
     },
   ],
 };
@@ -60,23 +57,23 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "I have pursued comprehensive education and training in full-stack web development, focusing on the MERN stack and practical applications.",
+    "Computer science studies, focused full-stack training, and continued learning in Java, C#, and .NET complement my production experience.",
   items: [
     {
-      institution: " University of the People, Pasadena, CA",
-      degree: "Associate Bachelors Degree",
-      duration: "On-going",
+      institution: "University of the People",
+      degree: "Associate Bachelor's Degree in Computer Science",
+      duration: "2024 - Present · one term remaining",
     },
     {
       institution: "Deerwalk Training Center",
-      degree: "Diploma in MERN stack",
-      duration: "2023",
+      degree: "Diploma in Full-Stack MERN Development",
+      duration: "Mar 2023 - May 2023",
     },
 
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web development Bootcamp",
-      duration: "2022",
+      institution: "Academic & personal development",
+      degree: "Java and C# / .NET fundamentals",
+      duration: "Ongoing",
     },
   ],
 };
@@ -85,32 +82,32 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "I have diverse experience in full-stack development, SEO, digital marketing, with a proven track record of delivering high-quality software solutions.",
+    "Progressive experience spanning backend leadership, client delivery, full-stack applications, ERP systems, and earlier IT operations.",
   items: [
     {
-      company: "Online",
-      position: "Freelance Developer",
-      duration: "present",
+      company: "Quantum Query Lab Ltd · Remote, UK",
+      position: "Senior Developer / Backend Lead",
+      duration: "Oct 2025 - Jul 2026",
+    },
+    {
+      company: "Voltech HR · Remote, Nepal",
+      position: "Web Developer",
+      duration: "Jun 2025 - Sep 2025",
+    },
+    {
+      company: "Freelance · Remote, Nepal",
+      position: "Web Application Developer",
+      duration: "Sep 2024 - Mar 2025",
     },
     {
       company: "Nepal Can Code",
-      position: "MERN stack developer",
-      duration: "2023 - 2024",
+      position: "Full-stack Developer",
+      duration: "Sep 2023 - Mar 2024",
     },
     {
-      company: "Deerwalk Training Center",
-      position: "Diploma in MERN stack(Internship)",
-      duration: "Summer 2023",
-    },
-    {
-      company: "Team pro HR and IT services",
-      position: "Digital marketing $ IT support",
-      duration: "2019-2022",
-    },
-    {
-      company: "TMS Continue Softech & Trading Pvt Ltd",
-      position: "SEO analyst",
-      duration: "2016-2017",
+      company: "Deerwalk Compware Limited",
+      position: "MERN Developer Intern",
+      duration: "Jun 2023 - Jul 2023",
     },
   ],
 };
@@ -118,11 +115,11 @@ const experience = {
 const skills = {
   title: "My skills",
   description:
-    "I possess a broad range of technical skills in web development and database management, enabling me to deliver comprehensive and effective solutions.",
+    "A backend-first toolkit for designing, shipping, and operating business applications from database to interface.",
   skillList: [
     {
-      icon: <FaPython />,
-      name: "Python",
+      icon: <SiNestjs />,
+      name: "NestJS",
     },
     {
       icon: <FaJs />,
@@ -133,12 +130,12 @@ const skills = {
       name: "TypeScript",
     },
     {
-      icon: <FaHtml5 />,
-      name: "Html 5",
+      icon: <SiPrisma />,
+      name: "Prisma",
     },
     {
-      icon: <FaCss3 />,
-      name: "Css 3",
+      icon: <FaDocker />,
+      name: "Docker",
     },
     {
       icon: <FaReact />,
@@ -153,8 +150,8 @@ const skills = {
       name: "Postgresql",
     },
     {
-      icon: <SiTailwindcss />,
-      name: "Tailwind CSS",
+      icon: <FaAws />,
+      name: "AWS",
     },
     {
       icon: <SiNextdotjs />,
@@ -169,8 +166,8 @@ const skills = {
       name: "MySql",
     },
     {
-      icon: <SiGraphql />,
-      name: "GraphQL",
+      icon: <FaPython />,
+      name: "Python",
     },
   ],
 };
@@ -181,7 +178,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        trasition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 0.4, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
@@ -200,8 +197,7 @@ const Resume = () => {
           <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold"></h3>
-                {experience.title}
+                <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
@@ -231,8 +227,7 @@ const Resume = () => {
 
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold"></h3>
-                {education.title}
+                <h3 className="text-4xl font-bold">{education.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>

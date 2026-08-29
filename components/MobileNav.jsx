@@ -19,7 +19,7 @@ const links = [
   },
   {
     name: "Work",
-    path: "/work",
+    path: "/contact",
   },
   {
     name: "Contact",
@@ -38,7 +38,7 @@ const MobileNav = () => {
       <SheetContent className="flex flex-col">
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
-            <h1 ClassName="text-4xl font-semibold">
+            <h1 className="text-4xl font-semibold">
               Anush<span className="text-accent">.</span>
             </h1>
           </Link>

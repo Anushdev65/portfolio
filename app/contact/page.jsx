@@ -4,16 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
 
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const info = [
@@ -32,15 +22,15 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Paheelo pul, Kathmandu, Nepal",
+    description: "Trollhättan, Sweden",
   },
 ];
 
 const Contact = () => {
   return (
     <motion.section
-      intial={{ opacity: 0 }}
-      amimate={{
+      initial={{ opacity: 0 }}
+      animate={{
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
@@ -49,35 +39,23 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#1c1c1f] rounded-xl">
-              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
+            <form action="mailto:anush.malhotra4@gmail.com" method="post" encType="text/plain" className="flex flex-col gap-6 p-10 bg-[#1c1c1f] rounded-xl">
+              <h3 className="text-4xl text-accent">Let&apos;s build reliable systems</h3>
               <p className="text-white/60">
-                For further enquiry fill the input fields bellow:
+                I&apos;m open to system development, backend, and full-stack opportunities in Sweden and remote teams.
               </p>
 
               <div className="grid grid-cols 1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Your first name" />
-                <Input type="lastname" placeholder="Your last name" />
-                <Input type="email" placeholder="Enter your email" />
-                <Input type="phone" placeholder="Input your number" />
+                <Input name="firstName" placeholder="Your first name" required />
+                <Input name="lastName" placeholder="Your last name" />
+                <Input name="email" type="email" placeholder="Enter your email" required />
+                <Input name="phone" type="tel" placeholder="Your phone number" />
               </div>
-
-              <Select>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <selectLabel>Select A service </selectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">Software Development</SelectItem>
-                    <SelectItem value="est">UI/UX Design</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
               <Textarea
+                name="message"
                 className="h-[200px]"
                 placeholder="Type your message here."
+                required
               />
               <Button size="md" className="max-w-40">
                 Send Message

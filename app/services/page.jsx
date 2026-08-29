@@ -6,31 +6,31 @@ import { easeIn, motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Backend & API Development",
     description:
-      "Building responsive, user-friendly, and dynamic websites using the latest technologies like MERN stack and Next.js.",
-    href: "",
+      "Designing modular REST APIs, authentication, business workflows, and integrations with NestJS, Node.js, TypeScript, and relational databases.",
+    href: "/contact",
   },
   {
     num: "02",
-    title: "Software Development",
+    title: "ERP & Business Systems",
     description:
-      "Developing robust and scalable web software tailored to your business needs, leveraging modern frameworks and tools.",
-    href: "",
+      "Translating operational requirements into maintainable schemas, services, and full-stack workflows for enterprise and industrial teams.",
+    href: "/work",
   },
   {
     num: "03",
-    title: "SEO",
+    title: "Cloud Delivery & DevOps",
     description:
-      "Optimizing your website to rank higher on search engines, driving organic traffic and improving your online visibility.",
-    href: "",
+      "Supporting containerized deployments and production-style environments with Docker, AWS, Nginx, Linux, and disciplined Git workflows.",
+    href: "/resume",
   },
   {
     num: "04",
-    title: "UI & UX Design",
+    title: "Full-stack Web Platforms",
     description:
-      "Designing intuitive and engaging user interfaces with a focus on enhancing user experience and satisfaction.",
-    href: "",
+      "Building responsive React and Next.js experiences backed by practical data models, secure sessions, and clear business logic.",
+    href: "/work",
   },
 ];
 
