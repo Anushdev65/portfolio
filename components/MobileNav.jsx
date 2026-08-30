@@ -2,6 +2,7 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 
 const links = [
@@ -29,26 +30,32 @@ const links = [
 
 const MobileNav = () => {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
-    <Sheet>
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <SheetContent className="flex flex-col overflow-y-auto">
         <div className="mt-32 mb-40 text-center text-2xl">
-          <Link href="/">
+          <Link href="/" onClick={() => setIsOpen(false)}>
             <h1 className="text-4xl font-semibold">
               Anush<span className="text-accent">.</span>
             </h1>
           </Link>
         </div>
-        <nav className="flex flex-col justify-center items-center gap-8">
+        <nav className="flex flex-col justify-center items-center gap-8 pb-10">
           {links.map((link, index) => {
             return (
               <Link
                 href={link.path}
                 key={index}
+                onClick={() => setIsOpen(false)}
                 className={`${
                   link.path === pathname &&
                   "text-accent border-b-2 border-accent "
