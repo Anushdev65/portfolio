@@ -11,7 +11,10 @@ const StairTransition = () => {
     <>
       <AnimatePresence mode="wait">
         <div key={pathname}>
-          <div className="fixed inset-0 z-40 flex pointer-events-none" aria-hidden="true">
+          <div
+            className="fixed inset-0 z-40 flex overflow-hidden pointer-events-none"
+            aria-hidden="true"
+          >
             <Stairs />
           </div>
           <motion.div

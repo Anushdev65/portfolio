@@ -10,7 +10,7 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+977) 9849997910",
+    description: "+46 727641582",
   },
 
   {
@@ -39,17 +39,38 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <form action="mailto:anush.malhotra4@gmail.com" method="post" encType="text/plain" className="flex flex-col gap-6 p-10 bg-[#1c1c1f] rounded-xl">
-              <h3 className="text-4xl text-accent">Let&apos;s build reliable systems</h3>
+            <form
+              action="mailto:anush.malhotra4@gmail.com"
+              method="post"
+              encType="text/plain"
+              className="flex flex-col gap-6 p-10 bg-[#1c1c1f] rounded-xl"
+            >
+              <h3 className="text-4xl text-accent">
+                Let&apos;s build reliable systems
+              </h3>
               <p className="text-white/60">
-                I&apos;m open to system development, backend, and full-stack opportunities in Sweden and remote teams.
+                I&apos;m open to system development, backend, and full-stack
+                opportunities in Sweden and remote teams.
               </p>
 
               <div className="grid grid-cols 1 md:grid-cols-2 gap-6">
-                <Input name="firstName" placeholder="Your first name" required />
+                <Input
+                  name="firstName"
+                  placeholder="Your first name"
+                  required
+                />
                 <Input name="lastName" placeholder="Your last name" />
-                <Input name="email" type="email" placeholder="Enter your email" required />
-                <Input name="phone" type="tel" placeholder="Your phone number" />
+                <Input
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <Input
+                  name="phone"
+                  type="tel"
+                  placeholder="Your phone number"
+                />
               </div>
               <Textarea
                 name="message"
