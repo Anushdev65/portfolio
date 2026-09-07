@@ -20,11 +20,11 @@ const links = [
   },
   {
     name: "Work",
-    path: "/contact",
+    path: "/work",
   },
   {
     name: "Contact",
-    path: "/work",
+    path: "/contact",
   },
 ];
 
